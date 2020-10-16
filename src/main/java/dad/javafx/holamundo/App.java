@@ -12,6 +12,8 @@ public class App extends Application {
 		
 		holaController = new HolaController();
 		
+		holaController.getView().getSaludoLabel().setText("¡Hola " + holaController.getModel().nombreProperty() + "!");
+		holaController.getView().getSaludoLabel().setStyle("-fx-text-fill: blue; -fx-font: italic bold 30 sans-serif;");
 		Scene escena = new Scene(holaController.getView(), 320, 200);
 
 		primaryStage.setScene(escena);
