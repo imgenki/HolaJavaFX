@@ -11,8 +11,7 @@ public class App extends Application {
 	public void start(Stage primaryStage) throws Exception {
 		
 		holaController = new HolaController();
-		
-		
+
 		Scene escena = new Scene(holaController.getView(), 320, 200);
 
 		primaryStage.setScene(escena);

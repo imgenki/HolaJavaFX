@@ -20,10 +20,7 @@ public class HolaController {
 
 	private void onSaludarButtonAction(ActionEvent e) {
 		model.nombreProperty().bind(view.getNombreText().textProperty());
-		view.getSaludoLabel().setText("¡Hola " + model.nombreProperty() + "!");
+		view.getSaludoLabel().setText("¡Hola " + model.getNombre() + "!");
 		view.getSaludoLabel().setStyle("-fx-text-fill: blue; -fx-font: italic bold 30 sans-serif;");
-		
-
-		
 	}
 }

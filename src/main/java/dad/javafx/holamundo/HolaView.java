@@ -18,6 +18,7 @@ public class HolaView extends VBox {
 
 	public HolaView() {
 		super();
+		
 		nombreText = new TextField();
 		nombreText.setPrefColumnCount(5);
 		nombreText.setPromptText("Introduce un nombre");
@@ -30,10 +31,10 @@ public class HolaView extends VBox {
 		saludarButton.setText("Saludar");
 		saludarButton.setDefaultButton(true);
 
-		VBox root = new VBox();
-		root.setSpacing(5);
-		root.setAlignment(Pos.CENTER);
-		root.getChildren().addAll(nombreText, saludarButton, saludoLabel);
+		
+		setSpacing(5);
+		setAlignment(Pos.CENTER);
+		getChildren().addAll(nombreText, saludarButton, saludoLabel);
 
 	}
 	
